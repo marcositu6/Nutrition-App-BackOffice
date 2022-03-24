@@ -1,3 +1,7 @@
+# Nutrition-App-BackOffice
+
+BackOffice web application as a support product for a nutrition app. This web app will facilitate the administration of users and admins allowing to edit their permissions, status, membership… An extra feature the review of recipes submitted by users will also be implemented to approve or discard any user submission to the database.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -67,4 +71,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+# Nutrition-App-BackOffice
+
+BackOffice web application as a support product for a nutrition app. This web app will facilitate the administration of users and admins allowing to edit their permissions, status, membership… An extra feature the review of recipes submitted by users will also be implemented to approve or discard any user submission to the database.
+9b225371d1b05cb13726fe7b89be573d1c932e5e
