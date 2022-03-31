@@ -1,0 +1,60 @@
+@use '../../style/global' as *;
+
+.navbar {
+    background-color: $color-primary-Black;
+    @include tablet {
+        width: 180px;
+        height: 100vh;
+    }
+    &__accent {
+        @include tablet {
+            width: 180px;
+            height: 80px;
+        }
+        display: flex;
+        justify-content: center;
+        background-color: $color-primary-Green;
+    }
+    &__iconPholder {
+        background-color: $color-primary-White;
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        margin-top: 25px;
+        object-fit: contain;
+    }
+    &__icon {
+        // FIX!
+       margin: -15px 0px 0px -13px;
+    }
+    &-list {
+        margin-top: 100px;
+        @include tablet {
+            @include font-subheader;
+        }
+        &__link{
+            color: $color-primary-White;
+            text-decoration: none;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0px 10px 10px;
+            margin: 0px 0px 10px 30px;
+            &-item {
+                &--highlight {
+                    color: $color-secondary-lightGreen;
+                }
+            }
+            &-accent {
+                display: none;
+                &--highlight {
+                    display: block;
+                    width: 10px;
+                    height: 25px;
+                    border-radius: 4px;
+                    background-color: $color-secondary-lightGreen;
+                    justify-self: flex-end;
+                }
+            }
+        }
+    }
+}

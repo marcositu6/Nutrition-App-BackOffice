@@ -1,0 +1,15 @@
+@use './style/global' as *;
+
+.mainWrapper {
+  display: flex;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+.background {
+  background-color: $color-background-darkGrey;
+  width: 90%;
+}
+
+// Preguntar si muevo a global

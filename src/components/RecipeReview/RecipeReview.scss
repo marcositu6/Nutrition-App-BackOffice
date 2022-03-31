@@ -1,0 +1,77 @@
+@use '../../style/global' as *;
+
+.recipe {
+    background-color: $color-primary-Black;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 5px 10px #0000004a;
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+    &-header {
+        width: 100%;
+        height: 15rem;
+        &__img {
+            object-fit: cover;
+        }
+    }
+    &-preview {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__title {
+            @include font-header;
+            color: $color-primary-White;
+            margin-bottom: 1rem;
+        }
+        &-subheader {
+            display: flex;
+            align-items: center;
+            &__author {
+                @include font-subheader;
+                color: $color-primary-White;
+            }
+            &__badge {
+                color: $color-primary-Green;
+                margin-left: 1rem;
+            }
+        }
+    }
+    &-ingredients {
+        margin: 2rem 0rem;
+        margin-left: 2rem;
+        &__title {
+            padding-top: 1.5rem;
+            @include font-subheader;
+            color: $color-primary-White;
+        }
+        &-list {
+            margin-left: 3rem;
+            color: $color-primary-White;
+            margin-top: 1rem;
+            list-style-type: square;
+            &__item {
+                @include font-body;
+            }
+        }
+    }
+    &-steps {
+        margin: 2rem 0rem;
+        margin-left: 2rem;
+        &__title {
+            padding-top: 1.5rem;
+            @include font-subheader;
+            color: $color-primary-White; 
+        }
+        &-list {
+            margin-left: 3rem;
+            color: $color-primary-White;
+            margin-top: 1rem;
+            list-style-type: square;
+        }
+        &__item {
+            @include font-body;
+        }
+    }
+
+}

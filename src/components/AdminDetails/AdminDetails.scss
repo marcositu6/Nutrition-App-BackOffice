@@ -1,0 +1,109 @@
+@use '../../style/global' as *;
+
+.Adetails {
+    background-color: $color-primary-Black;
+    width: 80%;
+    border-radius: 12px;
+    box-shadow: 5px 10px #0000004a;
+    margin-bottom: 4rem;
+    margin-top: 5rem;
+    &-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        &-flex {
+            display: flex;
+            align-items: center;
+            &-Pholder {
+                width: 6rem;
+                height: 6rem;
+                border-radius: 3rem;
+                background-color: $color-primary-White;
+                margin: 2rem;
+                &__icon {
+                    margin-top: -1.2rem;
+                    margin-left: -1rem;
+                }
+            }
+            &-text {
+                margin-top: 3rem;
+                &-first {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    width: 40vw;
+                    &__name {
+                        @include font-header;
+                        color: $color-primary-White;
+                    }
+                    &__badge {
+                        color: $color-primary-Green;
+                    }
+                    &__email {
+                        @include font-body;
+                        color: $color-primary-White;
+                    }
+                }
+                &__signin {
+                    @include font-body;
+                    color: $color-primary-White;
+                    margin-top: 1rem;
+                }
+            }
+            &-icons {
+                justify-self: flex-end;
+                &__delete {
+                margin-right: 3rem;
+                color: $color-secondary-orange;
+                }
+            }
+        }
+    }
+    &-permissions {
+       background-color: $color-background-darkGrey;
+        margin: 2rem 0rem;
+        &__title {
+            @include font-subheader;
+            color: $color-primary-White;
+            margin-left: 2rem;
+            padding-top: 1.5rem;
+        }
+        &-icons {
+            display: flex;
+            justify-content: center;
+            padding-bottom: 1rem;
+            &-each {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 1rem;
+                &__icon {
+                    color: $color-secondary-orange;
+                }
+                &__name {
+                    color: $color-primary-White;
+                }
+            }
+        }
+    }
+    &-log {
+        margin: 4rem 0rem;
+        &__title {
+            color: $color-primary-White;
+            @include font-subheader;
+            margin-left: 2rem;
+            padding-top: 1.5rem;
+        }
+        &-list {
+            margin-left: 3rem;
+            color: $color-primary-White;
+            margin-top: 1rem;
+            list-style-type: square;
+            margin-left: 6rem
+        }
+        &__item {
+            @include font-body;
+        }
+    }
+}

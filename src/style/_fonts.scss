@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Quicksand';
+    src: "../assets/fonts/Quicksand-Light.woff2" format('woff2'),
+    "../assets/fonts/alternative/Quicksand-Light.woff" format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Quicksand';
+    src: "../assets/fonts/Quicksand-SemiBold.woff2" format('woff2'),
+    "../assets/fonts/alternative/Quicksand-SemiBold.woff" format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'ABeeZee';
+    src: "../assets/fonts/ABeeZee-Regular.woff2" format('woff2'),
+    "../assets/fonts/alternative/ABeeZee-Regular.woff" format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+html {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+
