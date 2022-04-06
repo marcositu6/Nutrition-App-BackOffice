@@ -60,6 +60,10 @@
                 color: $color-primary-Green;
                 margin-right: 1rem;
             }
+            &__none {
+                visibility: hidden;
+                margin-right: 1rem;
+            }
             &__email {
                 color: $color-primary-White;
                 @include font-body;

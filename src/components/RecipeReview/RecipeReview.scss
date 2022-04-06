@@ -1,5 +1,11 @@
 @use '../../style/global' as *;
 
+.wrapperRecipe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
 .recipe {
     background-color: $color-primary-Black;
     width: 80%;
@@ -9,10 +15,12 @@
     margin-top: 5rem;
     &-header {
         width: 100%;
+        border-radius: 12px;
         height: 15rem;
-        &__img {
-            object-fit: cover;
-        }
+        background-image: url("../../assets/img/pexels-daria-shevtsova-1095550.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
     &-preview {
         margin-top: 2rem;
@@ -22,10 +30,11 @@
         &__title {
             @include font-header;
             color: $color-primary-White;
-            margin-bottom: 1rem;
+            margin: 2rem;
         }
         &-subheader {
             display: flex;
+            flex-direction: column;
             align-items: center;
             &__author {
                 @include font-subheader;
@@ -39,7 +48,7 @@
     }
     &-ingredients {
         margin: 2rem 0rem;
-        margin-left: 2rem;
+        margin-left: 4rem;
         &__title {
             padding-top: 1.5rem;
             @include font-subheader;
@@ -52,12 +61,13 @@
             list-style-type: square;
             &__item {
                 @include font-body;
+                line-height: 2.2rem;
             }
         }
     }
     &-steps {
         margin: 2rem 0rem;
-        margin-left: 2rem;
+        margin-left: 4rem;
         &__title {
             padding-top: 1.5rem;
             @include font-subheader;
@@ -67,11 +77,42 @@
             margin-left: 3rem;
             color: $color-primary-White;
             margin-top: 1rem;
-            list-style-type: square;
-        }
-        &__item {
-            @include font-body;
+            list-style-type: decimal;
+        
+            &__item {
+                @include font-body;
+                line-height: 2.2rem;
+            }
         }
     }
-
+    &-footer {
+        @include font-subheader;
+        color: $color-primary-White;
+        text-align: center;
+        margin: 4rem;
+    }
+    &-buttons {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-bottom: 4rem;
+        &__save {
+            margin-right: 3rem;
+            background-color: $color-secondary-orange;
+            color: $color-primary-White;
+            border: none;
+            padding: 1rem;
+            border-radius: 3rem;
+            @include font-subheader;
+        }
+        &__cancel {
+            margin-right: 3rem;
+            background-color: $color-secondary-lightGreen;
+            color: $color-primary-Black;
+            border: none;
+            padding: 1rem;
+            border-radius: 3rem;
+            @include font-subheader;
+        }
+    }
 }

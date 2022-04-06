@@ -15,10 +15,10 @@ function App() {
           <Route path="/" component={PageHeader} />
           <Switch>
             <Route path="/users" exact component={UserList} />
-            <Route path="/users/details" component={UserDetails} />
+            <Route path="/users/details/:id" component={UserDetails} />
             <Route path="/recipe/review" component={RecipeReview} />
             <Route path="/admins" component={AdminList} />
-            <Route path="/admin/details" component={AdminDetails} />
+            <Route path="/admin/details/:id" component={AdminDetails} />
           </Switch>
         </Router>
       </div>

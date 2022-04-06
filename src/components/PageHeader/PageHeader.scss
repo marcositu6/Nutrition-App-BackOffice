@@ -5,6 +5,7 @@
     @include tablet {
         width: 180px;
         height: 100vh;
+        position: fixed;
     }
     &__accent {
         @include tablet {

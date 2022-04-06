@@ -5,7 +5,7 @@
     width: 80%;
     border-radius: 12px;
     box-shadow: 5px 10px #0000004a;
-    margin-bottom: 4rem;
+    margin-bottom: 40rem;
     margin-top: 5rem;
     &-head {
         display: flex;
@@ -31,14 +31,31 @@
                 &-first {
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
                     width: 40vw;
                     &__name {
                         @include font-header;
+                        background-color: $color-primary-Black;
                         color: $color-primary-White;
+                        border: none;
+                        display: inline;
+                        padding: 0;
+                        max-width: 13rem;
+                        margin-right: 2rem;
+                    }
+                    &__role {
+                        @include font-header;
+                        background-color: $color-primary-Black;
+                        color: $color-primary-White;
+                        border: none;
+                        display: inline;
+                        padding: 0;
+                        max-width: 20rem;
+                        appearance: none;
+                        margin-right: 2rem;
                     }
                     &__badge {
                         color: $color-primary-Green;
+                        margin-right: 2rem;
                     }
                     &__email {
                         @include font-body;
@@ -56,6 +73,8 @@
                 &__delete {
                 margin-right: 3rem;
                 color: $color-secondary-orange;
+                cursor: pointer;
+
                 }
             }
         }
@@ -78,7 +97,12 @@
                 flex-direction: column;
                 align-items: center;
                 margin: 1rem;
+                background-color: $color-background-darkGrey;
+                border: none;
                 &__icon {
+                    color: $color-secondary-lightGreen;
+                }
+                &__none {
                     color: $color-secondary-orange;
                 }
                 &__name {
@@ -100,10 +124,35 @@
             color: $color-primary-White;
             margin-top: 1rem;
             list-style-type: square;
-            margin-left: 6rem
+            margin-left: 6rem;
+            &__item {
+                @include font-body;
+                line-height: 2.5rem;
+            }
         }
-        &__item {
-            @include font-body;
+    }
+    &-buttons {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-bottom: 4rem;
+        &__save {
+            margin-right: 3rem;
+            background-color: $color-secondary-orange;
+            color: $color-primary-White;
+            border: none;
+            padding: 1rem;
+            border-radius: 3rem;
+            @include font-subheader;
+        }
+        &__cancel {
+            margin-right: 3rem;
+            background-color: $color-secondary-lightGreen;
+            color: $color-primary-Black;
+            border: none;
+            padding: 1rem;
+            border-radius: 3rem;
+            @include font-subheader;
         }
     }
 }

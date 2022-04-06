@@ -1,0 +1,108 @@
+@use '../../style/global' as *;
+
+.modal-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: rgba($color: $color-primary-Black, $alpha: 0.8);
+    -webkit-overflow-scrolling: touch;
+    display: flex;
+    justify-content: center;
+  }
+
+  .modal-item {
+    width: 100%;
+    height: 100vh;
+    background-color: $color-primary-Black;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        margin: 0rem 4.8rem;
+        width: 80rem;
+        height: 33rem;
+        position: fixed;
+        top: 13rem;
+    }
+    &__close {
+        align-self: flex-end;
+        background-color: $color-primary-White;
+        margin: 2.4rem;
+        width: 2.4rem;
+        height: 2.4rem;
+        border: none;
+        border-radius: 5px;
+        &-icon {
+            margin: -0.7rem 0rem 0rem -1.13rem;
+            object-fit: contain;
+        }
+    }
+    &-text {
+        margin: 0rem 1.6rem;
+        @include tablet {
+            margin: 0rem 6.4rem;
+        }
+        &__title {
+            @include font-header;
+            margin-bottom: 1.6rem;
+            color: $color-primary-White;
+        }
+        &__description {
+            @include font-header;
+            margin-bottom: 90%;
+            color: $color-primary-White;
+
+            @include tablet {
+                margin-bottom: 6rem;
+                margin-right: 6.4rem;
+            }
+        }
+    }
+    &-buttons {
+        display: flex;
+        justify-self: flex-end;
+        @include tablet {
+            margin-right: 6.4rem;
+            align-self: flex-end;
+        }
+        &__cancel {
+            margin: 0rem 1.6rem;
+            @include font-mobile-body;
+            height: 3rem;
+            background-color: $color-primary-White;
+            border: 1px solid $color-background-darkGrey;
+            color: $color-primary-Black;
+            border-radius: 7px;
+            @include tablet {
+                width: auto;
+                padding: 0rem 1.6rem;
+                height: 3.8rem;
+                @include font-body;
+            }
+        }
+        &__delete {
+            margin-right: 1.6rem;
+            @include font-mobile-body;
+            height: 3rem;
+            border-radius: 7px;
+            border: 1px solid $color-background-darkGrey;
+            background-color: $color-secondary-orange;
+            @include tablet {
+                width: auto;
+                padding: 0rem 1.6rem;
+                height: 3.8rem;
+                @include font-body;
+            }
+        }
+    }
+  }
+  .display-flex {
+      display: flex;
+  }
+  .display-none {
+      display: none;
+  }
+  

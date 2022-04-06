@@ -30,17 +30,27 @@
                 &-first {
                     display: flex;
                     align-items: center;
-                    justify-content: space-between;
                     width: 40vw;
                     &__name {
                         @include font-header;
+                        background-color: $color-primary-Black;
                         color: $color-primary-White;
+                        border: none;
+                        display: inline;
+                        padding: 0;
+                        max-width: 10rem;
                     }
                     &__badge {
+                        margin: 0rem 1.5rem;
                         color: $color-primary-Green;
+                    }
+                    &__none {
+                        visibility: hidden;
+                        margin: 0rem 2rem;
                     }
                     &__email {
                         @include font-body;
+                        margin-left: 1rem;
                         color: $color-primary-White;
                     }
                 }
@@ -56,6 +66,8 @@
             &__delete {
                 color: $color-secondary-orange;
                 margin-right: 3rem;
+                cursor: pointer;
+
             }
         }
     }
@@ -71,14 +83,105 @@
         &-icons {
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             padding-bottom: 1rem;
             &-each {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 margin: 1rem;
+                background-color: $color-secondary-lightGreen;
+                border: none;
                 &__icon {
-                    color: $color-secondary-orange;
+                    height: 4rem;
+                    width: 4rem;
+                    margin-bottom: 1rem;
+                }
+                &__none {
+                    visibility: hidden;
+                    height: 4rem;
+                    width: 4rem;
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+    &-info {
+        &__title {
+            color: $color-primary-White;
+            @include font-subheader;
+            margin-left: 2rem;
+            padding-top: 1.5rem;
+        }
+        &-text {
+            margin: 3rem;
+            padding-left: 3rem;
+            list-style-type: circle;
+            &__address {
+                color: $color-primary-White;
+                margin-bottom: 1rem;
+                @include font-body;
+                &--input {
+                    border: none;
+                    background-color: $color-primary-Black;
+                    color: $color-primary-White;
+                    max-width: 6rem;
+                    margin-left: 1rem;
+                }
+            }
+            &__physicalAttributes {
+                color: $color-primary-White;
+                margin-bottom: 1rem;
+                @include font-body;
+
+                &--input {
+                    border: none;
+                    background-color: $color-primary-Black;
+                    color: $color-primary-White;
+                    max-width: 1.7rem;
+                    margin-left: 0.5rem;
+                    &:first-child {
+                        max-width: 2.4rem;
+                    }
+                    &:last-child {
+                        max-width: 7rem;
+                    }
+                }
+            }
+            &__objective {
+                color: $color-primary-White;
+                @include font-body;
+                margin-bottom: 1rem;
+                &--input {
+                    border: none;
+                    background-color: $color-primary-Black;
+                    color: $color-primary-White;
+                    max-width: 10rem;
+                    margin-left: 0.5rem;
+                }
+            }
+            &__activity {
+                color: $color-primary-White;
+                @include font-body;
+                margin-bottom: 1rem;
+                &--input {
+                    border: none;
+                    background-color: $color-primary-Black;
+                    color: $color-primary-White;
+                    max-width: 10rem;
+                    margin-left: 0.5rem;
+                }
+            }
+            &__birthDate {
+                color: $color-primary-White;
+                @include font-body;
+                margin-bottom: 1rem;
+                &--input {
+                    border: none;
+                    background-color: $color-primary-Black;
+                    color: $color-primary-White;
+                    max-width: 10rem;
+                    margin-left: 0.5rem;
                 }
             }
         }
@@ -95,11 +198,53 @@
             display: flex;
             justify-content: center;
             &__first {
-                width: 30vw;
-                height: 20rem;
+                width: 37vw;
+                height: 26rem;
                 margin-top: 4rem;
                 background-color: $color-secondary-lightGreen;
+                padding: 1.5rem;
+                border-radius: 12px;
             }
+        }
+        &__titleOther {
+            color: $color-primary-White;
+            @include font-subheader;
+            margin-left: 8rem;
+            padding-top: 4rem;
+        }
+        &-logList {
+            list-style: decimal;
+            margin: 2rem 0rem 8rem 12rem;
+            &__item {
+                @include font-body;
+                color: $color-primary-White;
+                line-height: 2.2rem;
+            }
+        }
+
+    }
+    &-buttons {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-bottom: 4rem;
+        &__save {
+            margin-right: 3rem;
+            background-color: $color-secondary-orange;
+            color: $color-primary-White;
+            border: none;
+            padding: 1rem;
+            border-radius: 3rem;
+            @include font-subheader;
+        }
+        &__cancel {
+            margin-right: 3rem;
+            background-color: $color-secondary-lightGreen;
+            color: $color-primary-Black;
+            border: none;
+            padding: 1rem;
+            border-radius: 3rem;
+            @include font-subheader;
         }
     }
 }
