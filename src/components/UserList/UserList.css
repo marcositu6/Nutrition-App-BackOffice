@@ -1,0 +1,274 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+select {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: "../assets/fonts/Quicksand-Light.woff2" format("woff2"), "../assets/fonts/alternative/Quicksand-Light.woff" format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: "../assets/fonts/Quicksand-SemiBold.woff2" format("woff2"), "../assets/fonts/alternative/Quicksand-SemiBold.woff" format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ABeeZee";
+  src: "../assets/fonts/ABeeZee-Regular.woff2" format("woff2"), "../assets/fonts/alternative/ABeeZee-Regular.woff" format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  font-family: "Quicksand", sans-serif;
+}
+
+.Ulist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.Ulist-head {
+  width: 50%;
+  position: relative;
+  margin: 4rem;
+}
+.Ulist-head__searchbar {
+  width: 100%;
+  background-color: #010B19;
+  border-style: none;
+  height: 2.2rem;
+  border-radius: 2rem;
+  padding-left: 3.5rem;
+  color: #ffffff;
+}
+.Ulist-head__searchbar:focus-visible {
+  outline-color: #9AECCB;
+  outline-offset: 2px;
+}
+.Ulist-head__icon {
+  color: #ffffff;
+  position: absolute;
+  top: 3px;
+  left: 10px;
+}
+.Ulist-item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #010B19;
+  width: 75%;
+  border-radius: 12px;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.2901960784);
+  margin-bottom: 4rem;
+}
+.Ulist-item-first {
+  display: flex;
+  align-items: center;
+}
+.Ulist-item-first-Pholder {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  background-color: #ffffff;
+  margin: 2rem;
+}
+.Ulist-item-first-Pholder__icon {
+  color: #010B19;
+}
+.Ulist-item-first__name {
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  margin-right: 1rem;
+}
+.Ulist-item-first__badge {
+  color: #09ED92;
+  margin-right: 1rem;
+}
+.Ulist-item-first__none {
+  visibility: hidden;
+  margin-right: 1rem;
+}
+.Ulist-item-first__email {
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  margin-right: 1rem;
+}
+.Ulist-item-first__signin {
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+}
+.Ulist-item-second {
+  display: flex;
+  align-items: center;
+}
+.Ulist-item-second__delete {
+  color: #F95738;
+  margin-right: 1rem;
+}
+.Ulist-item-second__edit {
+  color: #9AECCB;
+  margin-right: 1rem;
+}/*# sourceMappingURL=UserList.css.map */

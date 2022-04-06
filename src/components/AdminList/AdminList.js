@@ -115,7 +115,7 @@ class AdminList extends React.Component {
                             size={60}
                           />
                         </div>
-                        <h2 className="Alist-item-first__name">{`${admin.name}  ${admin.role}`}</h2>
+                        <h2 className="Alist-item-first__name">{`${admin.name}    ${admin.role}`}</h2>
                         <Icon
                           className="Alist-item-first__badge"
                           glyph="bolt"

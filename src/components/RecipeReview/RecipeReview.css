@@ -1,0 +1,320 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+select {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: "../assets/fonts/Quicksand-Light.woff2" format("woff2"), "../assets/fonts/alternative/Quicksand-Light.woff" format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: "../assets/fonts/Quicksand-SemiBold.woff2" format("woff2"), "../assets/fonts/alternative/Quicksand-SemiBold.woff" format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ABeeZee";
+  src: "../assets/fonts/ABeeZee-Regular.woff2" format("woff2"), "../assets/fonts/alternative/ABeeZee-Regular.woff" format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  font-family: "Quicksand", sans-serif;
+}
+
+.wrapperRecipe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recipe {
+  background-color: #010B19;
+  width: 66%;
+  border-radius: 12px;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.2901960784);
+  margin-bottom: 4rem;
+  margin-top: 5rem;
+}
+.recipe-header {
+  width: 100%;
+  border-radius: 12px;
+  height: 15rem;
+  background-image: url("../../assets/img/pexels-daria-shevtsova-1095550.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.recipe-preview {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipe-preview__title {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 2rem;
+}
+.recipe-preview-subheader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.recipe-preview-subheader__author {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.recipe-preview-subheader__badge {
+  color: #09ED92;
+  margin-left: 1rem;
+}
+.recipe-ingredients {
+  margin: 2rem 0rem;
+  margin-left: 4rem;
+}
+.recipe-ingredients__title {
+  padding-top: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.recipe-ingredients-list {
+  margin-left: 3rem;
+  color: #ffffff;
+  margin-top: 1rem;
+  list-style-type: square;
+}
+.recipe-ingredients-list__item {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+.recipe-steps {
+  margin: 2rem 0rem;
+  margin-left: 4rem;
+}
+.recipe-steps__title {
+  padding-top: 1.5rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+.recipe-steps-list {
+  margin-left: 3rem;
+  color: #ffffff;
+  margin-top: 1rem;
+  list-style-type: decimal;
+}
+.recipe-steps-list__item {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  line-height: 2.2rem;
+}
+.recipe-footer {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin: 4rem;
+}
+.recipe-buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.recipe-buttons__save {
+  margin-right: 3rem;
+  background-color: #F95738;
+  color: #ffffff;
+  border: none;
+  padding: 1rem;
+  border-radius: 3rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+.recipe-buttons__cancel {
+  margin-right: 3rem;
+  background-color: #9AECCB;
+  color: #010B19;
+  border: none;
+  padding: 1rem;
+  border-radius: 3rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}/*# sourceMappingURL=RecipeReview.css.map */

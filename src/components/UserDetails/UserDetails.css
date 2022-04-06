@@ -1,0 +1,463 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+select {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: "../assets/fonts/Quicksand-Light.woff2" format("woff2"), "../assets/fonts/alternative/Quicksand-Light.woff" format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: "../assets/fonts/Quicksand-SemiBold.woff2" format("woff2"), "../assets/fonts/alternative/Quicksand-SemiBold.woff" format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ABeeZee";
+  src: "../assets/fonts/ABeeZee-Regular.woff2" format("woff2"), "../assets/fonts/alternative/ABeeZee-Regular.woff" format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  font-family: "Quicksand", sans-serif;
+}
+
+.Udetails {
+  background-color: #010B19;
+  width: 66%;
+  border-radius: 12px;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.2901960784);
+  margin-bottom: 4rem;
+  margin-top: 5rem;
+}
+.Udetails-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.Udetails-head-flex {
+  display: flex;
+  align-items: center;
+}
+.Udetails-head-flex-Pholder {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+  background-color: #ffffff;
+  margin: 2rem;
+}
+.Udetails-head-flex-text {
+  margin-top: 3rem;
+}
+.Udetails-head-flex-text-first {
+  display: flex;
+  align-items: center;
+  width: 40vw;
+}
+.Udetails-head-flex-text-first__name {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 600;
+  background-color: #010B19;
+  color: #ffffff;
+  border: none;
+  display: inline;
+  padding: 0;
+  max-width: 10rem;
+}
+.Udetails-head-flex-text-first__badge {
+  margin: 0rem 1.5rem;
+  color: #09ED92;
+}
+.Udetails-head-flex-text-first__none {
+  visibility: hidden;
+  margin: 0rem 2rem;
+}
+.Udetails-head-flex-text-first__email {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  margin-left: 1rem;
+  color: #ffffff;
+}
+.Udetails-head-flex-text__signin {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+.Udetails-head-icons {
+  justify-self: flex-end;
+}
+.Udetails-head-icons__delete {
+  color: #F95738;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+.Udetails-allergies {
+  background-color: #9AECCB;
+  margin: 2rem 0rem;
+}
+.Udetails-allergies__title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  color: #010B19;
+  margin-left: 2rem;
+  padding-top: 1.5rem;
+}
+.Udetails-allergies-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 1rem;
+}
+.Udetails-allergies-icons-each {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  background-color: #9AECCB;
+  border: none;
+}
+.Udetails-allergies-icons-each__icon {
+  height: 4rem;
+  width: 4rem;
+  margin-bottom: 1rem;
+}
+.Udetails-allergies-icons-each__none {
+  visibility: hidden;
+  height: 4rem;
+  width: 4rem;
+  margin-bottom: 1rem;
+}
+.Udetails-info__title {
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  margin-left: 2rem;
+  padding-top: 1.5rem;
+}
+.Udetails-info-text {
+  margin: 3rem;
+  padding-left: 3rem;
+  list-style-type: circle;
+}
+.Udetails-info-text__address {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+}
+.Udetails-info-text__address--input {
+  border: none;
+  background-color: #010B19;
+  color: #ffffff;
+  max-width: 6rem;
+  margin-left: 1rem;
+}
+.Udetails-info-text__physicalAttributes {
+  color: #ffffff;
+  margin-bottom: 1rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+}
+.Udetails-info-text__physicalAttributes--input {
+  border: none;
+  background-color: #010B19;
+  color: #ffffff;
+  max-width: 1.7rem;
+  margin-left: 0.5rem;
+}
+.Udetails-info-text__physicalAttributes--input:first-child {
+  max-width: 2.4rem;
+}
+.Udetails-info-text__physicalAttributes--input:last-child {
+  max-width: 7rem;
+}
+.Udetails-info-text__objective {
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.Udetails-info-text__objective--input {
+  border: none;
+  background-color: #010B19;
+  color: #ffffff;
+  max-width: 10rem;
+  margin-left: 0.5rem;
+}
+.Udetails-info-text__activity {
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.Udetails-info-text__activity--input {
+  border: none;
+  background-color: #010B19;
+  color: #ffffff;
+  max-width: 10rem;
+  margin-left: 0.5rem;
+}
+.Udetails-info-text__birthDate {
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.Udetails-info-text__birthDate--input {
+  border: none;
+  background-color: #010B19;
+  color: #ffffff;
+  max-width: 10rem;
+  margin-left: 0.5rem;
+}
+.Udetails-analytics {
+  margin: 4rem 0rem;
+}
+.Udetails-analytics__title {
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  margin-left: 2rem;
+  padding-top: 1.5rem;
+}
+.Udetails-analytics-graphs {
+  display: flex;
+  justify-content: center;
+}
+.Udetails-analytics-graphs__first {
+  width: 37vw;
+  height: 26rem;
+  margin-top: 4rem;
+  background-color: #9AECCB;
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+.Udetails-analytics__titleOther {
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  margin-left: 8rem;
+  padding-top: 4rem;
+}
+.Udetails-analytics-logList {
+  list-style: decimal;
+  margin: 2rem 0rem 8rem 12rem;
+}
+.Udetails-analytics-logList__item {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 2.2rem;
+}
+.Udetails-buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.Udetails-buttons__save {
+  margin-right: 3rem;
+  background-color: #F95738;
+  color: #ffffff;
+  border: none;
+  padding: 1rem;
+  border-radius: 3rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+.Udetails-buttons__cancel {
+  margin-right: 3rem;
+  background-color: #9AECCB;
+  color: #010B19;
+  border: none;
+  padding: 1rem;
+  border-radius: 3rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}/*# sourceMappingURL=UserDetails.css.map */

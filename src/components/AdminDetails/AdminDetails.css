@@ -1,0 +1,362 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+input {
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+select {
+  cursor: pointer;
+}
+
+@font-face {
+  font-family: "Quicksand";
+  src: "../assets/fonts/Quicksand-Light.woff2" format("woff2"), "../assets/fonts/alternative/Quicksand-Light.woff" format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: "../assets/fonts/Quicksand-SemiBold.woff2" format("woff2"), "../assets/fonts/alternative/Quicksand-SemiBold.woff" format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "ABeeZee";
+  src: "../assets/fonts/ABeeZee-Regular.woff2" format("woff2"), "../assets/fonts/alternative/ABeeZee-Regular.woff" format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  font-family: "Quicksand", sans-serif;
+}
+
+.Adetails {
+  background-color: #010B19;
+  width: 66%;
+  border-radius: 12px;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0.2901960784);
+  margin-bottom: 40rem;
+  margin-top: 5rem;
+}
+.Adetails-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.Adetails-head-flex {
+  display: flex;
+  align-items: center;
+}
+.Adetails-head-flex-Pholder {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 3rem;
+  background-color: #ffffff;
+  margin: 2rem;
+}
+.Adetails-head-flex-Pholder__icon {
+  margin-top: -1.2rem;
+  margin-left: -1rem;
+}
+.Adetails-head-flex-text {
+  margin-top: 3rem;
+}
+.Adetails-head-flex-text-first {
+  display: flex;
+  align-items: center;
+  width: 40vw;
+}
+.Adetails-head-flex-text-first__name {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 600;
+  background-color: #010B19;
+  color: #ffffff;
+  border: none;
+  display: inline;
+  padding: 0;
+  max-width: 13rem;
+  margin-right: 2rem;
+}
+.Adetails-head-flex-text-first__role {
+  font-family: "ABeeZee", sans-serif;
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  font-weight: 600;
+  background-color: #010B19;
+  color: #ffffff;
+  border: none;
+  display: inline;
+  padding: 0;
+  max-width: 20rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin-right: 2rem;
+}
+.Adetails-head-flex-text-first__badge {
+  color: #09ED92;
+  margin-right: 2rem;
+}
+.Adetails-head-flex-text-first__email {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+.Adetails-head-flex-text__signin {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 1rem;
+}
+.Adetails-head-flex-icons {
+  justify-self: flex-end;
+}
+.Adetails-head-flex-icons__delete {
+  margin-right: 3rem;
+  color: #F95738;
+  cursor: pointer;
+}
+.Adetails-permissions {
+  background-color: #202934;
+  margin: 2rem 0rem;
+}
+.Adetails-permissions__title {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-left: 2rem;
+  padding-top: 1.5rem;
+}
+.Adetails-permissions-icons {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+.Adetails-permissions-icons-each {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  background-color: #202934;
+  border: none;
+}
+.Adetails-permissions-icons-each__icon {
+  color: #9AECCB;
+}
+.Adetails-permissions-icons-each__none {
+  color: #F95738;
+}
+.Adetails-permissions-icons-each__name {
+  color: #ffffff;
+}
+.Adetails-log {
+  margin: 4rem 0rem;
+}
+.Adetails-log__title {
+  color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+  margin-left: 2rem;
+  padding-top: 1.5rem;
+}
+.Adetails-log-list {
+  margin-left: 3rem;
+  color: #ffffff;
+  margin-top: 1rem;
+  list-style-type: square;
+  margin-left: 6rem;
+}
+.Adetails-log-list__item {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+.Adetails-buttons {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-bottom: 4rem;
+}
+.Adetails-buttons__save {
+  margin-right: 3rem;
+  background-color: #F95738;
+  color: #ffffff;
+  border: none;
+  padding: 1rem;
+  border-radius: 3rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}
+.Adetails-buttons__cancel {
+  margin-right: 3rem;
+  background-color: #9AECCB;
+  color: #010B19;
+  border: none;
+  padding: 1rem;
+  border-radius: 3rem;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: 600;
+}/*# sourceMappingURL=AdminDetails.css.map */
