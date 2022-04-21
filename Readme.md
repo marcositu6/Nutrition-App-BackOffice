@@ -3,6 +3,8 @@
 
 BackOffice web application as a support product for a nutrition app. This web app will facilitate the administration of users and admins allowing to edit their permissions, status, membership, allergies... An extra feature the review of recipes submitted by users will also be implemented to approve or discard any user submission to the database.
 
+![Walkthough gif 1](https://raw.githubusercontent.com/marcositu6/marcositu6/main/assets/video-part1.gif)
+![Walkthough gif 2](https://raw.githubusercontent.com/marcositu6/marcositu6/main/assets/video-part2.gif)
 
 Download and Startup:  
 
